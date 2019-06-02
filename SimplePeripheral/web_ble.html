@@ -67,17 +67,17 @@
       }
       bluetoothDevice = null;
       connected = false;
-      log("Error:", error); 
+      log("Error:", error);
       _update();
     });
 
   }
 
   function onDisconnected(event) {
-      log("Disconnected by remote device!"); 
+      log("Disconnected by remote device!");
       bluetoothDevice = null;
       connected = false;
-      _update();    
+      _update();
   }
 
   function _disconnect() {
@@ -105,8 +105,8 @@
     .then(_ => {
       log('toggle done, new value is ' + ledValue);
     })
-    .catch(error => { 
-      log(error); 
+    .catch(error => {
+      log(error);
     });
   }
 
@@ -150,7 +150,8 @@
 
 <div class="container">
   <div class="page-header">
-    <h2>LinkIt 7697<br>Web BLE demo</h2>
+    <h2>LinkIt 7697<br>Web BLE 測試</h2>
+    <h3>曾希哲</h3>
   </div>
   <div class="row">
     <div class="col-sm-3">
